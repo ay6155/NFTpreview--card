@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-size:18px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+    a.active{
+        text-decoration:none;
+    }
+    a.active:hover{
+        color:var(--Cyan);
+    }
+    .card-bg{
+        background-color:var(--Very-dark-blue-main-BG);
+        padding:3rem 2rem;
+    }
+    
+
+    .main-bg{
+        background-color:var(--Very-dark-blue-card-BG);
+        border-radius:20px;
+        width:100%;
+        max-width:375px;
+        margin:0 auto;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding:1rem 1rem;
+        
+    }
+
+    .dice-holder{
+        margin-top:1rem;
+    }
+    
+    /* need help in changing the background color of the image */
+
+    .image-dice{
+        width:100%;
+        border-radius:10px;
+        display: block;
+    }
+    .text-info a{
+        margin-top:0.9rem;
+        color:var(--White);
+        font-size:1.5rem;
+        font-weight:600;
+    }
+
+    .text-content{
+        margin-top:0;
+        color:var(--Soft-blue);
+        font-weight:400;
+        line-height:29px;
+    }
+    .token-section{
+        display:flex;
+        flex-direction: row;
+        
+        Gap:5rem;
+        padding:1rem;
+        margin-right: 1rem;
+        margin-bottom:1rem;
+        border-bottom: 1px solid var(--Very-dark-blue-line);
+    }
+    .token-section span{
+        color:var(--Cyan);
+        font-weight: 300;
+    }
+
+   
+        .eth-content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:0.4rem;
+            margin-right:1em;
+        }
+    .time-left span{
+        color:var(--Soft-blue);
+        font-weight:300;
+        margin-left:0.23rem;
+        /* width:75px; */
+    }
+    .time-left{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+    }
+
+    .author-creation{
+       display: flex;
+       /* width:60%; */
+       padding:0;
+       margin:0;
+    }
+    .avater-image{
+        /* margin-top:1rem; */
+    }
+    .avater-image img{
+        width:50%;
+        border-radius:50%;
+        /* background-color:var(--White); */
+        border:1px solid var(--White);
+    }
+    .author-name p{
+        color:var(--Soft-blue);
+    }
+    .author-name p a{
+        color:var(--White);
+        font-weight:200;
+    }
+
+    @media (min-width:1440px) {
+
+body{
+    margin:0;
+    padding:0;
+    font-size:18px;
+    /* background-color:var(--Very-dark-blue-main-BG); */
+    
+}
+
+
+.card-bg{
+    background-color:var(--Very-dark-blue-main-BG);
+    min-width:1440px;
+    box-shadow:inset 20px 3px 10px var(--Very-dark-blue-card-BG);
+}
+    .main-bg{
+        background-color:var(--Very-dark-blue-card-BG);
+        border-radius:20px;
+        width:70%;
+        margin:0 auto;
+    }
+    .main-container {
+        
+    }
+    .token-section {
+        display: flex;
+        flex-direction: row;
+        Gap:0.5rem; 
+    }
+    .author-name p {
+        width:200px;
+    }
+    .avater-image img {
+        width: 80%;
+        margin-top:1rem;
+    }
+}
+    
+
+
+
+
