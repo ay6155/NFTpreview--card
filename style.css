@@ -19,8 +19,11 @@ body{
     font-size:18px;
     display:flex;
     flex-direction:column;
+    justify-content: center;
     align-items: center;
     font-family: 'Outfit', sans-serif;
+    background-color:var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
 }
 
 
@@ -31,7 +34,7 @@ body{
         color:var(--Cyan);
     }
     .card-bg{
-        background-color:var(--Very-dark-blue-main-BG);
+        
         padding:3rem 2rem;
     }
     
@@ -53,12 +56,40 @@ body{
 
     .dice-holder{
         margin-top:1rem;
+        
     }
     
+    .dice-holder .img-dice{
+        display: block;
+        position: relative;
+    }
+
+    .img-dice::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: teal;
+        opacity: 0;
+    }
+
+    .img-dice::before:hover {
+        opacity: 0.7;
+    }
+
+    .img-dice::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-image: url(../nft-preview-card-component-main/images/image-equilibrium.jpg);
+        background-size: contain;
+        background-position: right;
+        opacity: 0;
+    }
+
     /* need help in changing the background color of the image */
 
     .image-dice{
-        width:100%;
+        max-width:100%;
         border-radius:10px;
         display: block;
     }
@@ -69,6 +100,7 @@ body{
         font-weight:600;
     }
 
+   
     .text-content{
         margin-top:0;
         color:var(--Soft-blue);
@@ -117,7 +149,7 @@ body{
        margin:0;
     }
     .avater-image{
-        /* margin-top:1rem; */
+        margin-top: 0.6em;
     }
     .avater-image img{
         width:50%;
@@ -125,8 +157,14 @@ body{
         /* background-color:var(--White); */
         border:1px solid var(--White);
     }
+
+    .author-name{
+        display: inline-block;
+        margin-right: 4em;
+    }
     .author-name p{
         color:var(--Soft-blue);
+        white-space: nowrap;
     }
     .author-name p a{
         color:var(--White);
@@ -139,13 +177,12 @@ body{
     margin:0;
     padding:0;
     font-size:18px;
-    /* background-color:var(--Very-dark-blue-main-BG); */
+    background-color:var(--Very-dark-blue-main-BG);
     
 }
 
 
 .card-bg{
-    background-color:var(--Very-dark-blue-main-BG);
     min-width:1440px;
     box-shadow:inset 20px 3px 10px var(--Very-dark-blue-card-BG);
 }
@@ -168,7 +205,7 @@ body{
     }
     .avater-image img {
         width: 80%;
-        margin-top:1rem;
+        margin-top:0.6em
     }
 }
     
